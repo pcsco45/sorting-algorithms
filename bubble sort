@@ -1,0 +1,19 @@
+numbers = [1, 7, 3, 9, 5]
+length = len(numbers)
+
+swapped = True
+while (length > 0) and (swapped == True):
+    swapped = False
+    length = length - 1
+    for index in range(0, length):
+        if (numbers[index] > numbers[index + 1]):
+            temp = numbers[index]
+            numbers[index] = numbers[index + 1]
+            numbers[index + 1] = temp
+            swapped = True
+
+print(numbers)
+
+
+
+
